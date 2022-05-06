@@ -1,3 +1,34 @@
+CREATE SCHEMA `leccion-10-sql` ;
+
+USE `leccion-10-sql`;
+
+
+CREATE TABLE Empleadas
+(IDEmpleada INT NOT NULL AUTO_INCREMENT,
+Salario FLOAT DEFAULT NULL,
+Nombre VARCHAR(30) DEFAULT NULL,
+Apellido VARCHAR(30) DEFAULT NULL,
+Email VARCHAR(30) DEFAULT NULL,
+Telefono VARCHAR(30) DEFAULT NULL,
+Ciudad VARCHAR(30) DEFAULT NULL,
+Pais VARCHAR(10) DEFAULT NULL,
+PRIMARY KEY (IDEmpleada)
+);
+
+
+INSERT INTO Empleadas
+VALUE   (1 ,	2500 ,	'Ana' ,	'González' , 'ana@adalab.es' ,	654785214 ,	'Madrid' ,	'España' ),
+ (2 ,	4000 ,	'Maria' ,	'López' , 'maria@adalab.es' , 689656322 ,	'Barcelona' ,	'España' ),
+ (3 ,	3000 ,	'Lucía' ,	'Ramos' , 'lucia@adalab.es' , 674459123 ,	'Valencia' ,	'España' ),
+ (4 ,	5000 ,	'Elena' ,	'Bueno' , 'elena@adalab.es' , 628546577 ,	'Bilbao' ,	'España' ),
+ (5 ,	1500 ,	'Rocío' ,	'García' , 'rocio@adalab.es' , 616365624 ,	'Paris' ,	'Francia' ),
+ (6 ,	2000 ,	'Inés' ,	'Romero' , 'ines@adalab.es' , 619739261 ,	'Sevilla' ,	'España' ),
+ (7 ,	2200 ,	'Alba' ,	'Fernández' , 'alba@adalab.es' , NULL ,	NULL ,	'España' ),
+ (8 ,	1800 ,	'Julia' ,	'Aguilar' , 'julia@adalab.es' , 614339261 ,	'Zaragoza' ,	'España' ),
+ (9 ,	2000 ,	'Irene' ,	'Montenegro' , 'irene@adalab.es' , 659745615 ,	'Cataluña' ,	'España' ),
+ (10 ,	3000 ,	'Laura' ,	'Navarro' , 'laura@adalab.es' , NULL ,	NULL ,	'Italia' );
+
+
 
 
 
